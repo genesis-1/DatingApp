@@ -45,9 +45,6 @@ namespace DatingApp.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> PostAsync([FromBody]UserForRegisterDto userForRegister)
         {
-            //validate the request.
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
 
             userForRegister.Username = userForRegister.Username.ToLower();
 
