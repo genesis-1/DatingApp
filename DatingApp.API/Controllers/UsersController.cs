@@ -43,11 +43,7 @@ namespace DatingApp.API.Controllers
             return Ok(userToReturn);
         }
 
-        // POST: api/Users
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+      
 
         // PUT: api/Users/5
         [HttpPut("{id}")]
@@ -64,10 +60,6 @@ namespace DatingApp.API.Controllers
 
         }
 
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+
     }
 }

@@ -7,12 +7,11 @@ import * as alertify from 'alertifyjs';
 export class AlertifyService {
   constructor() {}
 
-  cofirm(message: string, okCallback: () => any) {
-    alertify.cofirm(message, (e: any) => {
+  confirm(message: string, okCallback: () => any) {
+    alertify.confirm(message, function(e) {
       if (e) {
         okCallback();
-      } else {
-      }
+      } else {}
     });
   }
 
