@@ -14,6 +14,7 @@ import { RegisterComponent } from './Register/Register.component';
 import { ErrorInterceptor } from './_services/error.interceptor';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { FileUploadModule } from 'ng2-file-upload';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { ListsComponent } from './lists/lists.component';
@@ -55,7 +56,8 @@ export class CustomHammerConfig extends HammerGestureConfig{
     MemberCardComponent,
     MemberDetailComponent,
     MemberEditComponent,
-    PhotoEditorComponent
+    PhotoEditorComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
