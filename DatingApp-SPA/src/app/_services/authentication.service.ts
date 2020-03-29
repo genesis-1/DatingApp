@@ -32,7 +32,7 @@ login(user: User) {
         localStorage.setItem('token', user.token);
         localStorage.setItem('user', JSON.stringify(user.user));
         this.decodedToken = this.jwtHelper.decodeToken(user.token);
-        this.decodedToken = user.user;
+        this.currentUser = user.user;
         this.changeMemberPhoto(this.currentUser.photoUrl);
       }
     })

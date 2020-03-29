@@ -5,15 +5,13 @@
    "version": "0.2.0",
    "configurations": [
        {
-           "type": "chrome",
+           "name": "Launch edge against localhost",
+           "type": "edge",
+           "version": "dev",
            "request": "launch",
-           "name": "Launch Chrome against localhost",
-           "url": "http://localhost:8080",
+           "url": "http://localhost:4200/",
            "webRoot": "${workspaceFolder}/DatingApp-SPA"
        },
-
-   
-   
         {
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
